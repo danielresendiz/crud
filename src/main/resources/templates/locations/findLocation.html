@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+<body>
+	<h1>Se ha encontra la Localidad</h1>
+	
+	<table class="table table-striped stable-bordered table-hover">
+	  <tr class="table-primary">
+	    <th>locationID</th>
+	    <th>streetAddres</th>
+	    <th>postalCode</th>
+	    <th>city</th>
+	    <th>stateProvince</th>
+	    <th>country</th>
+	  </tr>
+	  	
+	  <tr >
+	    <td th:text="${elemento.locationID}"></td>
+	    <td th:text="${elemento.streetAddres}"></td>
+	    <td th:text="${elemento.postalCode}"></td>
+	    <td th:text="${elemento.city}"></td>
+	    <td th:text="${elemento.stateProvince}"></td>
+	    <td th:text="${elemento.countryID.countryName}"></td>
+	  </tr>
+  </table>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>
